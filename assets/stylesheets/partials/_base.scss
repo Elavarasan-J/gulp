@@ -1,0 +1,12 @@
+ 
+@mixin custom-button($bg,$clr,$border)
+{
+    background: $bg;
+    border: 1px solid $border;
+    color: $clr;
+    &:hover,&:focus,&:active
+    {
+        background-color: #4b8928;
+        outline: 0;
+    }
+}

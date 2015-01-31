@@ -1,0 +1,32 @@
+@mixin gradient-x($color1,$color2)
+{
+    background-image:-webkit-linear-gradient(top,$color1,$color2);
+    background-image:-moz-linear-gradient(top,$color1,$color2);
+    background-image:-o-linear-gradient(top,$color1,$color2);
+    background-image:-ms-linear-gradient(top,$color1,$color2);
+    background-image: linear-gradient(top,$color1,$color2);
+    &:hover,&:active,&:focus
+    {
+        background-image:-webkit-linear-gradient(top,$color1,$color1);
+        background-image:-moz-linear-gradient(top,$color1,$color1);
+        background-image:-o-linear-gradient(top,$color1,$color1);
+        background-image:-ms-linear-gradient(top,$color1,$color1);
+        background-image: linear-gradient(top,$color1,$color1);
+    }
+}
+@mixin custom-button($bg,$clr,$border)
+{
+    background: $bg;
+    border: 1px solid $border;
+    color: $clr;
+    &:hover,&:focus,&:active
+    {
+        background-color: #4b8928;
+    }
+}
+
+@mixin font($font-size1,$line-height1)
+{
+    font-size: $font-size1;
+    line-height: $line-height1;
+}

@@ -1,0 +1,23 @@
+button
+{
+    border: none;
+    padding: 7px 15px;
+    display: block;
+    text-align: center;
+    border-radius: 3px;
+    &:focus
+    {
+        outline: none;
+    }
+    &:hover,&:active
+    {
+        outline: none;   
+        background-color: #4b8928; 
+        cursor: pointer;
+    }
+}
+
+.btn-custom
+{
+    @include custom-button($btn-custom-bg,$btn-custom-color,$btn-custom-border);
+}

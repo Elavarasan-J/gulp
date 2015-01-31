@@ -1,0 +1,19 @@
+input
+{
+    border: 1px solid #ddd;
+    padding: 4px 10px;
+    &:focus
+    {
+        outline: 0;
+        border-color: $btn-custom-bg;
+    }
+}
+.required
+{
+    color: red;
+}
+input:enabled +label
+{
+    color: green;
+    
+}

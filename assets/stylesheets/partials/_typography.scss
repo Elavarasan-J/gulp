@@ -1,0 +1,152 @@
+ 
+article,aside,details,figcaption,figure,footer,header,hgroup,main,nav,section,summary 
+{
+    display: block;
+}
+ 
+audio,canvas,video
+{
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+}
+a
+{
+    text-decoration: none;
+}
+a:focus 
+{
+    outline:none;
+}
+ 
+a:active,a:hover 
+{
+    outline: 0;
+    text-decoration: none;
+}
+h1 
+{
+    font-size: 30px;
+    line-height:45px;
+    margin: 10px 0;
+}
+
+h2 
+{
+    font-size: 26px;
+    line-height:39px;
+    margin: 10px 0;
+}
+
+h3 
+{
+   font-size: 20px;
+    line-height:30px;
+    margin: 10px 0;
+}
+
+h4 
+{
+      font-size: 18px;
+    line-height:27px;
+    margin: 15px 0;
+}
+
+h5 
+{
+      font-size: 16px;
+    line-height:24px;
+    margin: 15px 0;
+}
+
+h6 
+{
+      font-size: 14px;
+    line-height:22px;
+    margin: 20px 0;
+}
+
+b,
+strong 
+{
+    font-weight: bold;
+}
+ 
+small 
+{
+    font-size: 80%;
+}
+ 
+sup 
+{
+    top: -10px;
+}
+
+sub 
+{
+    bottom: -5px;
+}
+ 
+figure 
+{
+    margin: 0;
+}
+ 
+form 
+{
+    margin: 0;
+}
+fieldset 
+{
+    border: 1px solid #c0c0c0;
+    margin: 0 2px;
+    padding: 0.35em 0.625em 0.75em;
+}
+legend
+{
+    border: 0; 
+    padding: 0;
+    white-space: normal;  
+    *margin-left: -7px; 
+}
+input,select,textarea 
+{
+    font-size: 100%;  
+    margin: 0; 
+    vertical-align: baseline; 
+    *vertical-align: middle; 
+}
+ 
+input 
+{
+    line-height: normal;
+}
+ 
+select 
+{
+    text-transform: none;
+}
+ 
+input[type="checkbox"],input[type="radio"] 
+{
+    box-sizing: border-box;  
+    padding: 0;
+}
+textarea 
+{
+    overflow: auto;  
+    vertical-align: top;  
+}
+/* Table styles */ 
+table 
+{
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+input[type="date"], input[type="time"], input[type="datetime-local"], input[type="month"], input[type="week"]
+{
+    line-height: 24px;
+}
+

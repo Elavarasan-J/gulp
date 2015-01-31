@@ -1,0 +1,260 @@
+/** Bootstrap **/
+@import '../../bower_components/bootstrap-sass-official/assets/stylesheets/bootstrap';
+
+/** Static stylesheets **/
+@import 'partials/variables';
+
+@import 'modules/header';
+@import 'modules/footer';
+
+
+@import 'partials/base';
+@import 'partials/button';
+@import 'partials/figure';
+@import 'partials/typography';
+@import 'partials/mixins';
+@import 'partials/responsive';
+@import 'partials/forms';
+@import 'partials/codepen';
+@import 'vendor/colorpicker';
+
+
+
+header
+{
+    color: red;
+    background: rgba(29,187,239,0.3) !important;
+    margin-bottom: 0px !important;
+    h2
+    {
+        font-size: 20px;
+        line-height: 30px;
+        outline: none;
+        border: 1px solid #ddd;
+    }
+}
+
+footer
+{
+    padding: 30px;
+}
+.content
+{
+    display: none;
+}
+.min_height
+{
+    min-height: 970px;
+    background-color: rgba(0,0,0,0.1);
+    padding: 20px;
+    color: #000;
+    border-color: transparent;
+    font-size: 20px;
+    line-height: 30px;
+}
+.btn-green
+{
+    @include gradient-x(#8ad360,#76b752);
+    @include text-overflow();
+}
+p
+{
+    font-size: 14px;
+    line-height: 22px;
+}
+
+/** button styls **/
+
+.hover-btn {
+  position: relative;
+  z-index: 5;
+  display: table;
+  font-size: 14px;
+  line-height: 22px;
+  border: 1px solid #3498DB;
+  background: none;
+  padding: 8px 16px;
+  color: #3498DB;
+  border-radius: 3px;
+  outline: none;
+  cursor: pointer;
+  overflow: hidden;
+  transition: all .3s ease-in-out .1s;
+  width: 200px;
+  &:hover {
+    color: white;
+    
+    &:before {
+       width: inherit;
+    }
+  }
+  
+  &:before {
+    z-index: -999;
+    position: absolute;
+    top: 0;
+    left: 0px;
+    width: 0px;
+    content: "";
+    padding: 21px 0px;
+    display: block;
+    background: #3498DB;
+    transition: all .5s ease-in-out;
+  }
+}
+ 
+
+
+
+
+/**---- smart phones  styles----**/
+@media only screen and (min-width : 320px) and (max-width : 480px) 
+{
+    .btn-custom
+    {
+        background: #ddd;
+        margin-bottom: 10px;
+    }
+    .hover-btn {
+      position: relative;
+      z-index: 5;
+      display: table;
+      font-size: 14px;
+      line-height: 22px;
+      border: 1px solid #3498DB;
+      background: none;
+      padding: 8px 16px;
+      color: #3498DB;
+      border-radius: 3px;
+      outline: none;
+      cursor: pointer;
+      overflow: hidden;
+      transition: all .3s ease-in-out .1s;
+      width: 200px;
+      &:hover {
+        color: white;
+
+        &:before {
+           width: inherit;
+        }
+      }
+
+      &:before {
+        z-index: -999;
+        position: absolute;
+        top: 0;
+        left: 0px;
+        width: 0px;
+        content: "";
+        padding: 21px 0px;
+        display: block;
+        background: green;
+        transition: all .5s ease-in-out;
+      }
+    }
+} 
+/**---- smart phones large styles---**/
+@media only screen and (min-width : 481px) and (max-width: 767px)
+{
+    .btn-custom
+    {
+        background: blue;
+        width: auto;
+        margin-bottom: 20px;
+    }
+}
+
+
+/*------ipads styles----*/
+
+@media only screen and (min-width: 768px) and (max-width: 1024px)
+{
+    .btn-custom
+    {
+        background: skyblue;
+        border: 1px solid transparent;
+    }
+    
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait)
+{
+    .btn-custom
+    {
+        background: red;
+    }
+     .hover-btn {
+      &:hover {
+        color: green;
+          font-weight: bold;
+          text-transform: capitalize;
+
+        &:before {
+           width: inherit;
+        }
+      }
+
+      &:before {
+        z-index: -999;
+        position: absolute;
+        top: 0;
+        left: 0px;
+        width: 0px;
+        content: "";
+        padding: 21px 0px;
+        display: block;
+        background: red;
+        transition: all .5s ease-in-out;
+          
+      }
+    }
+}
+.iconss
+{
+    position: relative;
+}
+.iconss >label
+{
+    color: gray;
+}
+.iconss input
+{
+    padding-right: 25px;
+}
+.iconss >i
+{
+    color: gray;
+    position: absolute;
+    top: 61%;
+    right: 2%;
+    opacity: 0;
+}
+.iconss >.form-control:focus + i
+{
+    opacity: 1;
+    transition: all 0.4s ease-in-out;
+    color: #66afe9;
+}
+.has-error >.form-control:focus + i
+{   
+    color: #a94442;
+}
+.has-success >.form-control:focus + i
+{
+    color: #3c763d;
+}
+.has-warning >.form-control:focus + i
+{
+    color: #8a6d3b;
+}
+.control-label
+{
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 22px;
+}
+.text-gray
+{
+    color: #333;    
+}
+
